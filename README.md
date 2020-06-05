@@ -1,7 +1,3 @@
-# Placement_Course
-
----
-
 # Course Overview
 
 If you are looking to revise all essential coding concepts to aim for product-based companies like Microsoft, Amazon, Adobe, etc, this placement course is ideal for you.
