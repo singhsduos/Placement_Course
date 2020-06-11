@@ -95,38 +95,6 @@ int main()
 	return 0;
 }// } Driver Code Ends
 
-void permutation(string S)
-{
-    //Your code here
-    sort(S.begin(),S.end());
-    do
-    {
-        cout<<S<<" ";
-    }while(next_permutation(S.begin(),S.end()));
-}
-
-// Method 3:
-
-#include<bits/stdc++.h>
-using namespace std;
-
-void permutation(string S);
-
-int main()
-{
-	int T;
-	cin>>T;
-	while(T--)
-	{
-		string S;
-		cin>>S;
-		permutation(S);
-		cout<<endl;
-	
-	}
-	return 0;
-}// } Driver Code Ends
-
 void _swap_func(string &S, int begin, int end, vector<string> &S_permutated) {
 char temp = S[begin];
 S[begin] = S[end];
@@ -160,3 +128,35 @@ cout<< S_permutated[i] << " ";
 }
 }
 
+
+// Method 3:(shortest method using STL)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void permutation(string S);
+
+int main()
+{
+	int T;
+	cin>>T;
+	while(T--)
+	{
+		string S;
+		cin>>S;
+		permutation(S);
+		cout<<endl;
+	
+	}
+	return 0;
+}// } Driver Code Ends
+
+void permutation(string S)
+{
+    //Your code here
+    sort(S.begin(),S.end());
+    do
+    {
+        cout<<S<<" ";
+    }while(next_permutation(S.begin(),S.end()));
+}
