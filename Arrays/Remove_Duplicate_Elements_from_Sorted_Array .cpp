@@ -59,7 +59,29 @@ int main()
 // } Driver Code Ends
 
 
-/*You are required to complete this function */
+/*You are required to complete this function  */
+
+
+int remove_duplicate(int A[],int N)
+{
+//Your code here
+int j=0; //slow pointer
+int i=0;//fast pointer
+for( i=0;i<N;i++)
+{
+    if(A[j]!=A[i])
+    {
+        j++;
+        A[j]=A[i];
+    }
+}
+return (j+1);
+
+}
+
+
+// second method
+
 int remove_duplicate(int A[],int N)
 {
  if(N==0||N==1)
@@ -86,4 +108,3 @@ int remove_duplicate(int A[],int N)
   
     return j;
 }
-
