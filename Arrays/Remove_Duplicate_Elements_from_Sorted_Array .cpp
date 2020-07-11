@@ -58,10 +58,6 @@ int main()
 }
 // } Driver Code Ends
 
-
-/*You are required to complete this function  */
-
-
 int remove_duplicate(int A[],int N)
 {
 //Your code here
