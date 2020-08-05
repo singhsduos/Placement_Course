@@ -42,13 +42,20 @@ using namespace std;
  // } Driver Code Ends
 
 
-
+//first method with stl
 void rotateArr(int arr[], int d, int n){
 
     rotate(arr,arr+d,arr+n);
 }
 
-
+//second method with stl
+void rotateArr(int arr[], int d, int n){
+ 
+   reverse(arr, arr+d);
+   reverse(arr+d, arr+n);
+   reverse(arr, arr+n);
+    
+}
 
 
 // { Driver Code Starts.
