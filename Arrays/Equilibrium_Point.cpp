@@ -87,3 +87,28 @@ if X is equal point Left_sum=Right_sum
 or 2*(Left_sum)=(Tot_sum-X)
 or (Left_sum)=(Tot_sum-X)*0.5
 */
+
+
+// SECOND METHOD
+int equilibrium(int arr[], int n)  
+{  
+    int sum = 0; // initialize sum of whole array  
+    int leftsum = 0; // initialize leftsum  
+  
+    /* Find sum of the whole array */
+    for (int i = 0; i < n; ++i)  
+        sum += arr[i];  
+  
+    for (int i = 0; i < n; ++i)  
+    {  
+        sum -= arr[i]; // sum is now right sum for index i  
+  
+        if (leftsum == sum)  
+            return i;  
+  
+        leftsum += arr[i];  
+    }  
+  
+    /* If no equilibrium index found, then return 0 */
+    return -1;  
+}  
