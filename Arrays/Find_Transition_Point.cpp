@@ -56,7 +56,15 @@ int main() {
         cout << transitionPoint(a, n) << endl;
     }
     return 0;
-}// } Driver Code Ends
+}
+
+// Method-1
+
+//Complexity Analysis:
+//Time Complexity: O(n).
+//Space Complexity: O(1).
+
+
 
 
 // Function to find the transition point
@@ -71,3 +79,32 @@ int transitionPoint(int arr[], int n) {
     return -1;
 }
 
+//Method-2
+
+//Complexity Analysis:
+//Time Complexity: O(log n).
+//The time complexity for binary search is O(log n).
+//Space Complexity: O(1).
+
+
+
+// Function to find the transition point
+int binarySearch(int arr[],int n)
+{
+    int begin=0;int end=n-1;
+    if(arr[n-1]==0) return -1;
+    while(begin<=end)
+    {
+       int mid=(begin+end)/2;
+       if(arr[mid]==0) 
+       {
+           begin=mid+1;
+       }
+       else end=mid-1;
+    }
+    return end+1;
+}
+int transitionPoint(int arr[], int n) {
+    // code here
+    return binarySearch(arr,n);
+}
