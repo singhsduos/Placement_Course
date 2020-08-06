@@ -77,9 +77,13 @@ int equilibriumPoint(long long a[], int n) {
     if(sum>(TotalSum-a[i])*0.5)
     return -1;
     sum+=a[i];
-      
-  }
-
-   
+   }
 }
 
+/* Logic
+Equilibrium position in an array is a position such that the sum of elements before it is equal to the sum of elements after it.
+X+Left_sum+Right_sum=Tot_sum
+if X is equal point Left_sum=Right_sum
+or 2*(Left_sum)=(Tot_sum-X)
+or (Left_sum)=(Tot_sum-X)*0.5
+*/
