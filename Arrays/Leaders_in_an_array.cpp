@@ -48,7 +48,7 @@ using namespace std;
 
 // Function to find the leaders in an array of size n
 vector<int> leaders(int arr[], int n){ 
-    vector<int>v; //new array we made after calculating leaders in array
+    vector<int>v; //new array we made after calculating leaders in array i.e answer of new array
     long long max=arr[n-1];
     for(int i=n-1; i>=0;i--){
         if(max <= arr[i]){
