@@ -59,12 +59,12 @@ string convertToRoman(int n)
 { 
     int num[] = {1,4,5,9,10,40,50,90,100,400,500,900,1000}; 
     string sys[] = {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"}; 
-    int i=12;  
-    string ans = "";
-    for(i=12;i>=0;i--)
+    int i=12;  // 12 is above no. given list of no. from 1 to 1000
+    string ans = ""; // intially empty string, we write empty string like this as we write integer like int = 0 is same like here empty string
+    for(i=12;i>=0;i--)  // decreasing because no. like 3549 we apply loop from 3000 which is near 1000 so opposite loop
     { 
       
-      while(n>=num[i]) 
+      while(n>=num[i]) // n is given number by user for roman
       { 
         ans+=sys[i];
         n-=num[i];  
