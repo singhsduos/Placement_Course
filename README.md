@@ -8,3 +8,9 @@ And above all, this course is free of cost.
 
 # Course Link
 [Placement_Course](https://practice.geeksforgeeks.org/courses/placement-preparation-course?vC=1).
+
+# Important Points:
+1. If you are checking this then remeber somewhere I have written comments in my own style so that if I want to come again to see logic so i can understand easily.
+2. I have written whole question and some solution have 2 to 3 method in each solution, so firstly read all these solution and then implement by own in your own way.
+
+# Thanks!
